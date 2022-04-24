@@ -2,10 +2,10 @@
 
 <p align="center"><img src="./img/preview.PNG"></p>
 
-A simple checklist template for video game reviews.
+A simple checklist template for video game reviews.  
 Licensed under MIT
 
-This is a tool to simplify the creation of short steam game reviews.
+This is a tool to simplify the creation of short steam game reviews.  
 Hosted with ❤ by Github: https://sprechblase.github.io/reviewificator/
 
 ## Usage
