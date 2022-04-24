@@ -22,7 +22,6 @@ Hosted with ❤ by Github: https://sprechblase.github.io/reviewificator/
     ♦ GRAPHICS      →   0/5
     ♦ AUDIO       →   0/5
     ♦ DIFFICULTY      →   0/5
-    ♦ STORY      →   0/5
     ♦ PRICE      →   0/5
 
     ♦ Overall: 0/5

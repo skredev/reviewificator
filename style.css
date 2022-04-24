@@ -32,9 +32,26 @@ body {
 
 .box {
     background: #191c29;
-    width: var(--card-width);
-    height: var(--card-height);
-    padding: 30px;
+    width: var(--box-width);
+    height: var(--box-height);
+    padding: 40px;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin: 20px;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box2 {
+    background: #191c29;
+    width: 1100px;
+    height: var(--box-height);
+    padding: 40px;
     position: relative;
     border-radius: 6px;
     justify-content: center;
@@ -42,8 +59,35 @@ body {
     text-align: center;
     display: flex;
     font-size: 1.5em;
+    margin: 20px;
     color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.box3 {
+    background: #191c29;
+    width: var(--box-width);
+    height: var(--box-height);
+    padding: 40px;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 1.5em;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.row {
+    padding: 25px;
+    align-items: center;
+}
+
+h3 {
+    font-size: 25px;
 }
 
 .fav {
@@ -52,4 +96,72 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-right: 15px;
 }
+
+.button {
+    width: 300px;
+    height: 60px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #212534 no-repeat center center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+    padding: 15px 15px;
+    border-radius: 10px;
+    outline: 0;
+}
+
+.button:hover {
+    width: 300px;
+    height: 60px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #252936 no-repeat center center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+    padding: 15px 15px;
+    border-radius: 10px;
+    outline: 0;
+}
+
+
+input[type=radio]{ 
+    -webkit-appearance: none;
+    margin: 0;
+    box-shadow: none; /* remove shadow on invalid submit */
+  }
+  
+  input[type=radio]::after {
+    content: '\2605';
+    font-size: 32px;
+  }
+  
+  input[type=radio]:invalid::after {
+    color: #ddd;
+  }
+  
+  rating:hover input[type=radio]:invalid::after,
+  rating:focus-within input[type=radio]:invalid::after
+  {color: #888;}
+  
+  rating:hover input[type=radio]:hover ~ input[type=radio]:invalid::after,
+  rating input[type=radio]:focus ~ input[type=radio]:invalid::after  {color: #ddd;}
+  
+  rating input[type=radio]:valid {
+    color: orange;
+  }
+  
+  rating input[type=radio]:checked ~ input[type=radio]:not(:checked)::after{
+    color: #ccc;
+  }
