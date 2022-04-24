@@ -6,6 +6,7 @@ A simple checklist template for video game reviews.
 Licensed under MIT
 
 This is a tool to simplify the creation of short steam game reviews.
+Hosted with ❤ by Github: https://sprechblase.github.io/reviewificator/
 
 ## Usage
 
