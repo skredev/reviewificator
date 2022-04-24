@@ -1,5 +1,4 @@
-<style>h3{color:red;}</style>
-<h3 align="center">! ACTIVE DEVELOPMENT !</h2>
+<h3 align="center">❗️ ACTIVE DEVELOPMENT ❗️</h2>
 <h1 align="center">Reviewificator</h1>
 
 <p align="center"><img src="./img/preview.PNG"></p>
