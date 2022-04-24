@@ -1,10 +1,10 @@
-<h2 align="center" style="color: red;">! ACTIVE DEVELOPMENT !</h2>
+<h3 align="center" style="color: red;">! ACTIVE DEVELOPMENT !</h2>
 <h1 align="center">Reviewificator</h1>
 
 <p align="center"><img src="./img/preview.PNG"></p>
 
 A simple checklist template for video game reviews.  
-Licensed under MIT
+> Licensed under MIT
 
 This is a tool to simplify the creation of short steam game reviews.  
 Hosted with ❤ by Github: https://sprechblase.github.io/reviewificator/
