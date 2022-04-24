@@ -1,3 +1,4 @@
+<h2 align="center" style="color: red;">! ACTIVE DEVELOPMENT !</h2>
 <h1 align="center">Reviewificator</h1>
 
 <p align="center"><img src="./img/preview.PNG"></p>
