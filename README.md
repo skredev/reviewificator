@@ -1,7 +1,7 @@
 <h3 align="center">❗️ ACTIVE DEVELOPMENT ❗️</h2>
 <h1 align="center">Reviewificator</h1>
 
-<p align="center"><img src="./img/preview.PNG"></p>
+<p align="center"><img src="./dist/img/preview.PNG"></p>
 
 A simple checklist template for video game reviews.  
 > Licensed under MIT
