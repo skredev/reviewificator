@@ -17,7 +17,7 @@ Hosted with ❤ by Github: https://sprechblase.github.io/reviewificator/
 
 3) Your review gets copied in your clipboard
     ```console
-    +-\\ {GAME} Review by {STEAM USERNAME} //-+
+    +-\\ My Review //-+
 
     ♦ GAMEPLAY      →   0/5
     ♦ GRAPHICS      →   0/5
