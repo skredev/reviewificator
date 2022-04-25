@@ -96,7 +96,7 @@ h3 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-right: 15px;
+    padding-right: 30px;
 }
 
 .button {
@@ -139,7 +139,7 @@ h3 {
 input[type=radio]{ 
     -webkit-appearance: none;
     margin: 0;
-    box-shadow: none; /* remove shadow on invalid submit */
+    box-shadow: none;
   }
   
   input[type=radio]::after {
