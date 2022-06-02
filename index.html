@@ -26,7 +26,7 @@ SOFTWARE.
     <head>
         <title>Reviewificator by Sprechblase</title>
         <link rel="icon" type="image/x-icon" href="./dist/img/favicon.PNG">
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/style.min.css">
         <script language="javascript" type="text/javascript" src="./js/script.js"></script>
     </head>
     <body>
@@ -86,10 +86,19 @@ SOFTWARE.
                 </ul>
             </div>
         </div>
+        <div class="box3">
+            <button class="button">GENERATE STEAM RATING</button>
+        </div>
     </body>
     <footer>
         <strong>Made with ❤️ by <a href="https://github.com/sprechblase">Sprechblase</a></strong>
         <script>
+            var gameplay = 2;
+            var graphics = 2;
+            var audio = 2;
+            var difficulty = 2;
+            var price = 2;
+            
             const container1 = document.querySelector('.rating-1');
             const items1 = container1.querySelectorAll('.rating-item-1')
             container1.onclick = e1 => {
@@ -98,7 +107,8 @@ SOFTWARE.
                 if (!elClass1.contains('active-1')) {
                     items1.forEach( // reset the active class on the star
                     item1 => item1.classList.remove('active-1'));
-                    console.log("1=" + e1.target.getAttribute("data-rate"));
+                    gameplay = e1.target.getAttribute("data-rate");
+                    console.log("1=" + gameplay);
                     elClass1.add('active-1'); // add active class to the clicked star
                 }
             };
@@ -111,7 +121,8 @@ SOFTWARE.
                 if (!elClass2.contains('active-2')) {
                     items2.forEach( // reset the active class on the star
                     item2 => item2.classList.remove('active-2'));
-                    console.log("2=" + e2.target.getAttribute("data-rate"));
+                    graphics = e2.target.getAttribute("data-rate");
+                    console.log("2=" + graphics);
                     elClass2.add('active-2'); // add active class to the clicked star
                 }
             };
@@ -124,7 +135,8 @@ SOFTWARE.
                 if (!elClass3.contains('active-3')) {
                     items3.forEach( // reset the active class on the star
                     item3 => item3.classList.remove('active-3'));
-                    console.log("3=" + e3.target.getAttribute("data-rate"));
+                    audio = e3.target.getAttribute("data-rate");
+                    console.log("3=" + audio);
                     elClass3.add('active-3'); // add active class to the clicked star
                 }
             };
@@ -137,7 +149,8 @@ SOFTWARE.
                 if (!elClass4.contains('active-4')) {
                     items4.forEach( // reset the active class on the star
                     item4 => item4.classList.remove('active-4'));
-                    console.log("4=" + e4.target.getAttribute("data-rate"));
+                    difficulty = e4.target.getAttribute("data-rate")
+                    console.log("4=" + difficulty);
                     elClass4.add('active-4'); // add active class to the clicked star
                 }
             };
@@ -150,10 +163,17 @@ SOFTWARE.
                 if (!elClass5.contains('active-5')) {
                     items5.forEach( // reset the active class on the star
                     item5 => item5.classList.remove('active-5'));
-                    console.log("5=" + e5.target.getAttribute("data-rate"));
+                    price = e5.target.getAttribute("data-rate");
+                    console.log("5=" + price);
                     elClass5.add('active-5'); // add active class to the clicked star
                 }
             };
+
+            var button = document.querySelector('.button');
+            button.onclick = b;
+            function b(){
+                console.log(gameplay + graphics + audio + difficulty + price);
+            }
         </script>
     </footer>
 </html>
