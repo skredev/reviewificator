@@ -1,4 +1,3 @@
-<h3 align="center">❗️ ACTIVE DEVELOPMENT ❗️</h2>
 <h1 align="center">Reviewificator</h1>
 
 <p align="center"><img src="./dist/img/preview.PNG"></p>
