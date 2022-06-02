@@ -26,10 +26,16 @@ SOFTWARE.
     <head>
         <title>Reviewificator by Sprechblase</title>
         <link rel="icon" type="image/x-icon" href="./dist/img/favicon.PNG">
-        <link rel="stylesheet" href="./css/style.min.css">
+        <link rel="stylesheet" href="./css/style.css">
         <script language="javascript" type="text/javascript" src="./js/script.js"></script>
     </head>
     <body>
+        <div class="chat-notification" id="chat-notification">
+            <div class="chat-notification-message">
+              <p class="chat-message-heading">Success</p>
+              <p class="chat-message-desc">Copied review successfully.</p>
+            </div>
+        </div>
         <div class="box">
             <img src="./dist/img/favicon.PNG" class="fav">
             <h1>REVIEWIFICATOR</h1>
@@ -197,7 +203,12 @@ SOFTWARE.
                 console.log(template);
 
                 copyStringToClipboard(template);
-                alert("The review has been copied");
+
+                var notification = document.getElementById('chat-notification');
+                notification.classList.toggle('chat-notification--success');
+                setTimeout(function(){
+                    notification.classList.toggle('chat-notification--success');
+                },3000);
             }
         </script>
     </footer>

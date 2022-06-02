@@ -331,3 +331,61 @@ content: "\2606";
 .rating-item-5:hover ~ .rating-item-5::before {
     color: orange;
 }
+
+.chat-notification * {
+    box-sizing: border-box;
+  }
+  .chat-notification {
+    font-size: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    line-heght: 1.5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    padding-top: 3em;
+    padding-left: 3em;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 0.1s linear;
+  }
+  .chat-notification-message {
+    display: inline-block;
+    text-align: left;
+    border-radius: 4px;
+    padding: 1.2em 1.2em;
+    min-width: 30em;
+    box-shadow: 0 0 12px rgba(0,0,0,0.5);
+  }
+  .chat-message-heading {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin: 0 0 0.3em 0;
+  }
+  .chat-message-desc {
+    font-size: 1.4em;
+    font-weight: 500;
+    margin: 0;
+  }
+  .chat-notification--error, .chat-notification--success, .chat-notification--warning, .chat-notification--info {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: all 0.2s ease;
+  }
+  .chat-notification--error .chat-notification-message, .chat-notification--success .chat-notification-message, .chat-notification--info .chat-notification-message {
+    color: #fff;
+  }
+  .chat-notification--error .chat-notification-message {
+    background-color: #d82323;
+  }
+  .chat-notification--success .chat-notification-message {
+    background-color: #191c29;
+  }
+  .chat-notification--warning .chat-notification-message {
+    background-color: #fab000;
+    color: #333;
+  }
+  .chat-notification--info .chat-notification-message {
+    background-color: #593ecc;
+  }
