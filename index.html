@@ -169,6 +169,23 @@ SOFTWARE.
                 }
             };
 
+            function copyStringToClipboard (str) {
+                // Temporäres Element erzeugen
+                var el = document.createElement('textarea');
+                // Den zu kopierenden String dem Element zuweisen
+                el.value = str;
+                // Element nicht editierbar setzen und aus dem Fenster schieben
+                el.setAttribute('readonly', '');
+                el.style = {position: 'absolute', left: '-9999px'};
+                document.body.appendChild(el);
+                // Text innerhalb des Elements auswählen
+                el.select();
+                // Ausgewählten Text in die Zwischenablage kopieren
+                document.execCommand('copy');
+                // Temporäres Element löschen
+                document.body.removeChild(el);
+            }
+
             var button = document.querySelector('.button');
             button.onclick = b;
             function b(){
@@ -178,6 +195,9 @@ SOFTWARE.
 
                 var template = '+-\\ Review //-+\n\n♦ GAMEPLAY      →   ' + gameplay + '/5\n♦ GRAPHICS      →   ' + graphics + '/5\n♦ AUDIO       →   ' + audio + '/5\n♦ DIFFICULTY      →   ' + difficulty + '/5\n♦ PRICE      →   ' + price + '/5\n\n♦ Overall: ' + average + '/5\n\nMade with Reviewificator  ►  https://sprechblase.github.io/reviewificator/';
                 console.log(template);
+
+                copyStringToClipboard(template);
+                alert("The review has been copied");
             }
         </script>
     </footer>
