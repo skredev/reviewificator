@@ -37,64 +37,123 @@ SOFTWARE.
         <div class="box2">
             <div class="row">
                 <h3>Gameplay</h3>
-                <rating id="1">
-                    <input type="radio" name="gameplay" id="gamplay-1" value="1" aria-label="1 star" required/>
-                    <input type="radio" name="gameplay" id="gamplay-2" value="2" aria-label="2 stars"/>
-                    <input type="radio" name="gameplay" id="gamplay-3" value="3" aria-label="3 stars"/>
-                    <input type="radio" name="gameplay" id="gamplay-4" value="4" aria-label="4 stars"/>
-                    <input type="radio" name="gameplay" id="gamplay-5" value="5" aria-label="5 stars"/>
-                </rating>
+                <ul class="rating-1">
+                    <li class="rating-item-1" data-rate="1"></li>
+                    <li class="rating-item-1 active-1" data-rate="2"></li>
+                    <li class="rating-item-1" data-rate="3"></li>
+                    <li class="rating-item-1" data-rate="4"></li>
+                    <li class="rating-item-1" data-rate="5"></li>
+                </ul>
             </div>
-
             <div class="row">
                 <h3>Graphics</h3>
-                <rating id="2">
-                    <input type="radio" name="graphics" id="graphics-1" value="1" aria-label="1 star" required/>
-                    <input type="radio" name="graphics" id="graphics-2" value="2" aria-label="2 stars"/>
-                    <input type="radio" name="graphics" id="graphics-3" value="3" aria-label="3 stars"/>
-                    <input type="radio" name="graphics" id="graphics-4" value="4" aria-label="4 stars"/>
-                    <input type="radio" name="graphics" id="graphics-5" value="5" aria-label="5 stars"/>
-                </rating>
+                <ul class="rating-2">
+                    <li class="rating-item-2" data-rate="1"></li>
+                    <li class="rating-item-2 active-2" data-rate="2"></li>
+                    <li class="rating-item-2" data-rate="3"></li>
+                    <li class="rating-item-2" data-rate="4"></li>
+                    <li class="rating-item-2" data-rate="5"></li>
+                </ul>
             </div>
-
             <div class="row">
                 <h3>Audio</h3>
-                <rating id="3">
-                    <input type="radio" name="audio" id="audio-1" value="1" aria-label="1 star" required/>
-                    <input type="radio" name="audio" id="audio-2" value="2" aria-label="2 stars"/>
-                    <input type="radio" name="audio" id="audio-3" value="3" aria-label="3 stars"/>
-                    <input type="radio" name="audio" id="audio-4" value="4" aria-label="4 stars"/>
-                    <input type="radio" name="audio" id="audio-5" value="5" aria-label="5 stars"/>
-                </rating>
+                <ul class="rating-3">
+                    <li class="rating-item-3" data-rate="1"></li>
+                    <li class="rating-item-3 active-3" data-rate="2"></li>
+                    <li class="rating-item-3" data-rate="3"></li>
+                    <li class="rating-item-3" data-rate="4"></li>
+                    <li class="rating-item-3" data-rate="5"></li>
+                </ul>
             </div>
-
             <div class="row">
                 <h3>Difficulty</h3>
-                <rating id="4">
-                    <input type="radio" name="difficulty" id="difficulty-1" value="1" aria-label="1 star" required/>
-                    <input type="radio" name="difficulty" id="difficulty-2" value="2" aria-label="2 stars"/>
-                    <input type="radio" name="difficulty" id="difficulty-3" value="3" aria-label="3 stars"/>
-                    <input type="radio" name="difficulty" id="difficulty-4" value="4" aria-label="4 stars"/>
-                    <input type="radio" name="difficulty" id="difficulty-5" value="5" aria-label="5 stars"/>
-                </rating>
+                <ul class="rating-4">
+                    <li class="rating-item-4" data-rate="1"></li>
+                    <li class="rating-item-4 active-4" data-rate="2"></li>
+                    <li class="rating-item-4" data-rate="3"></li>
+                    <li class="rating-item-4" data-rate="4"></li>
+                    <li class="rating-item-4" data-rate="5"></li>
+                </ul>
             </div>
-
             <div class="row">
                 <h3>Price</h3>
-                <rating id="5">
-                    <input type="radio" name="price" id="gamplay-1" value="1" aria-label="1 star" required/>
-                    <input type="radio" name="price" id="gamplay-2" value="2" aria-label="2 stars"/>
-                    <input type="radio" name="price" id="gamplay-3" value="3" aria-label="3 stars"/>
-                    <input type="radio" name="price" id="gamplay-4" value="4" aria-label="4 stars"/>
-                    <input type="radio" name="price" id="gamplay-5" value="5" aria-label="5 stars"/>
-                </rating>
+                <ul class="rating-5">
+                    <li class="rating-item-5" data-rate="1"></li>
+                    <li class="rating-item-5 active-5" data-rate="2"></li>
+                    <li class="rating-item-5" data-rate="3"></li>
+                    <li class="rating-item-5" data-rate="4"></li>
+                    <li class="rating-item-5" data-rate="5"></li>
+                </ul>
             </div>
-        </div>
-        <div class="box3">
-            <input type="submit" class="button" name="genbutton" value="GENERATE STEAM RATING">
         </div>
     </body>
     <footer>
         <strong>Made with ❤️ by <a href="https://github.com/sprechblase">Sprechblase</a></strong>
+        <script>
+            const container1 = document.querySelector('.rating-1');
+            const items1 = container1.querySelectorAll('.rating-item-1')
+            container1.onclick = e1 => {
+                const elClass1 = e1.target.classList;
+                // change the rating if the user clicks on a different star
+                if (!elClass1.contains('active-1')) {
+                    items1.forEach( // reset the active class on the star
+                    item1 => item1.classList.remove('active-1'));
+                    console.log("1=" + e1.target.getAttribute("data-rate"));
+                    elClass1.add('active-1'); // add active class to the clicked star
+                }
+            };
+
+            const container2 = document.querySelector('.rating-2');
+            const items2 = container2.querySelectorAll('.rating-item-2')
+            container2.onclick = e2 => {
+                const elClass2 = e2.target.classList;
+                // change the rating if the user clicks on a different star
+                if (!elClass2.contains('active-2')) {
+                    items2.forEach( // reset the active class on the star
+                    item2 => item2.classList.remove('active-2'));
+                    console.log("2=" + e2.target.getAttribute("data-rate"));
+                    elClass2.add('active-2'); // add active class to the clicked star
+                }
+            };
+
+            const container3 = document.querySelector('.rating-3');
+            const items3 = container3.querySelectorAll('.rating-item-3')
+            container3.onclick = e3 => {
+                const elClass3 = e3.target.classList;
+                // change the rating if the user clicks on a different star
+                if (!elClass3.contains('active-3')) {
+                    items3.forEach( // reset the active class on the star
+                    item3 => item3.classList.remove('active-3'));
+                    console.log("3=" + e3.target.getAttribute("data-rate"));
+                    elClass3.add('active-3'); // add active class to the clicked star
+                }
+            };
+
+            const container4 = document.querySelector('.rating-4');
+            const items4 = container4.querySelectorAll('.rating-item-4')
+            container4.onclick = e4 => {
+                const elClass4 = e4.target.classList;
+                // change the rating if the user clicks on a different star
+                if (!elClass4.contains('active-4')) {
+                    items4.forEach( // reset the active class on the star
+                    item4 => item4.classList.remove('active-4'));
+                    console.log("4=" + e4.target.getAttribute("data-rate"));
+                    elClass4.add('active-4'); // add active class to the clicked star
+                }
+            };
+
+            const container5 = document.querySelector('.rating-5');
+            const items5 = container5.querySelectorAll('.rating-item-5')
+            container5.onclick = e5 => {
+                const elClass5 = e5.target.classList;
+                // change the rating if the user clicks on a different star
+                if (!elClass5.contains('active-5')) {
+                    items5.forEach( // reset the active class on the star
+                    item5 => item5.classList.remove('active-5'));
+                    console.log("5=" + e5.target.getAttribute("data-rate"));
+                    elClass5.add('active-5'); // add active class to the clicked star
+                }
+            };
+        </script>
     </footer>
 </html>
