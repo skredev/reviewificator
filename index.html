@@ -172,7 +172,12 @@ SOFTWARE.
             var button = document.querySelector('.button');
             button.onclick = b;
             function b(){
-                console.log(gameplay + graphics + audio + difficulty + price);
+                var a = [gameplay,graphics,audio,difficulty,price];
+                var average = eval(a.join('+'))/a.length;
+                console.log(average)
+
+                var template = '+-\\ Review //-+\n\n♦ GAMEPLAY      →   ' + gameplay + '/5\n♦ GRAPHICS      →   ' + graphics + '/5\n♦ AUDIO       →   ' + audio + '/5\n♦ DIFFICULTY      →   ' + difficulty + '/5\n♦ PRICE      →   ' + price + '/5\n\n♦ Overall: ' + average + '/5\n\nMade with Reviewificator  ►  https://sprechblase.github.io/reviewificator/';
+                console.log(template);
             }
         </script>
     </footer>
