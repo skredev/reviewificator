@@ -21,7 +21,7 @@ Hosted with ❤ by Github: https://sprechblase.github.io/reviewificator/
     ♦ GAMEPLAY      →   0/5
     ♦ GRAPHICS      →   0/5
     ♦ AUDIO       →   0/5
-    ♦ DIFFICULTY      →   0/5
+    ♦ PERFORMANCE      →   0/5
     ♦ PRICE      →   0/5
 
     ♦ Overall: 0/5
