@@ -1,6 +1,6 @@
 <h1 align="center">Reviewificator</h1>
 
-<p align="center"><img src="./dist/img/prev.PNG"></p>
+<p align="center"><img src="./dist/img/prev.jpeg"></p>
 
 A simple checklist template for video game reviews.  
 > Licensed under MIT
@@ -10,13 +10,17 @@ Hosted with ❤ by Github: https://sprechblase.github.io/reviewificator/
 
 ## Usage
 
-1) Tick all checkboxes you want
+1) Write your review (if you want) in the text box
 
-2) Press the "GENERATE STEAM RATING" button
+2) Tick all checkboxes you want
 
-3) Your review gets copied in your clipboard
+3) Press the "GENERATE STEAM RATING" button
+
+4) Your review gets copied in your clipboard
     ```console
     +-\\ Review //-+
+
+	"Your Review Text" (*optional)
 
     ♦ GAMEPLAY      →   0/5
     ♦ GRAPHICS      →   0/5

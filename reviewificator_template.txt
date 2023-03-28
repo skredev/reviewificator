@@ -1,3 +1,23 @@
+<!-- WITH REVIEW TEXT -->
+
++-\ Review /-+
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+♦ GAMEPLAY      →   0/5
+♦ GRAPHICS      →   0/5
+♦ AUDIO       →   0/5
+♦ PERFORMANCE      →   0/5
+♦ PRICE      →   0/5
+
+♦ Overall: 0/5
+
+Made with Reviewificator  ►  https://sprechblase.github.io/reviewificator/
+
+
+
+<!-- WITHOUT REVIEW TEXT -->
+
 +-\ Review /-+
 
 ♦ GAMEPLAY      →   0/5
