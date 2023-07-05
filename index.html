@@ -27,6 +27,8 @@ SOFTWARE.
         <title>Reviewificator</title>
         <link rel="icon" type="image/x-icon" href="./dist/img/favicon.PNG">
         <link rel="stylesheet" href="./css/style.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script defer type="text/javascript" src="js/script.js"></script>
     </head>
     <body>
         <div class="chat-notification" id="chat-notification">
@@ -100,9 +102,6 @@ SOFTWARE.
         </div>
     </body>
     <footer>
-        <strong>Made with ❤️ by <a href="https://github.com/Sprechblase/reviewificator">Sprechblase</a></strong> PRODUCTION - Build: 280320231745
-        <script>
-          var gameplay=2,graphics=2,audio=2,performance=2,price=2;const container1=document.querySelector(".rating-1"),items1=container1.querySelectorAll(".rating-item-1");container1.onclick=e=>{let t=e.target.classList;t.contains("active-1")||(items1.forEach(e=>e.classList.remove("active-1")),gameplay=e.target.getAttribute("data-rate"),console.log("1="+gameplay),t.add("active-1"))};const container2=document.querySelector(".rating-2"),items2=container2.querySelectorAll(".rating-item-2");container2.onclick=e=>{let t=e.target.classList;t.contains("active-2")||(items2.forEach(e=>e.classList.remove("active-2")),graphics=e.target.getAttribute("data-rate"),console.log("2="+graphics),t.add("active-2"))};const container3=document.querySelector(".rating-3"),items3=container3.querySelectorAll(".rating-item-3");container3.onclick=e=>{let t=e.target.classList;t.contains("active-3")||(items3.forEach(e=>e.classList.remove("active-3")),audio=e.target.getAttribute("data-rate"),console.log("3="+audio),t.add("active-3"))};const container4=document.querySelector(".rating-4"),items4=container4.querySelectorAll(".rating-item-4");container4.onclick=e=>{let t=e.target.classList;t.contains("active-4")||(items4.forEach(e=>e.classList.remove("active-4")),performance=e.target.getAttribute("data-rate"),console.log("4="+performance),t.add("active-4"))};const container5=document.querySelector(".rating-5"),items5=container5.querySelectorAll(".rating-item-5");function copyStringToClipboard(e){var t=document.createElement("textarea");t.value=e,t.setAttribute("readonly",""),t.style={position:"absolute",left:"-9999px"},document.body.appendChild(t),t.select(),document.execCommand("copy"),document.body.removeChild(t)}container5.onclick=e=>{let t=e.target.classList;t.contains("active-5")||(items5.forEach(e=>e.classList.remove("active-5")),price=e.target.getAttribute("data-rate"),console.log("5="+price),t.add("active-5"))};var button=document.querySelector(".button");function b(){var a=[gameplay,graphics,audio,performance,price],average=eval(a.join("+"))/a.length;if(console.log(average),""!=document.getElementById("text").value)var template="+-\\ Review /-+\n\n"+document.getElementById("text").value+"\n\n♦ GAMEPLAY      →   "+gameplay+"/5\n♦ GRAPHICS      →   "+graphics+"/5\n♦ AUDIO       →   "+audio+"/5\n♦ DIFFICULTY      →   "+performance+"/5\n♦ PRICE      →   "+price+"/5\n\n♦ Overall: "+average+"/5\n\nMade with Reviewificator  ►  https://sprechblase.github.io/reviewificator/";else var template="+-\\ Review /-+\n\n♦ GAMEPLAY      →   "+gameplay+"/5\n♦ GRAPHICS      →   "+graphics+"/5\n♦ AUDIO       →   "+audio+"/5\n♦ DIFFICULTY      →   "+performance+"/5\n♦ PRICE      →   "+price+"/5\n\n♦ Overall: "+average+"/5\n\nMade with Reviewificator  ►  https://sprechblase.github.io/reviewificator/";console.log(template),copyStringToClipboard(template);var notification=document.getElementById("chat-notification");notification.classList.toggle("chat-notification--success"),setTimeout(function(){notification.classList.toggle("chat-notification--success")},3e3)}button.onclick=b;
-        </script>
+        <strong>Made with ❤️ by <a href="https://github.com/sprechblase">Sprechblase</a></strong> PRODUCTION - Build: 280320231745
     </footer>
 </html>
