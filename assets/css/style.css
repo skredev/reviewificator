@@ -22,6 +22,13 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
+html {
+  background: url("../data/bg-5-min.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  color-scheme: dark;
+}
+
 @import url("manrope.css");
 
 /* Animations */
@@ -71,13 +78,6 @@ SOFTWARE.
   0% {
     background-position: 50px 50px;
   }
-}
-
-html {
-  background: url("../data/bg-5-min.png");
-  background-attachment: fixed;
-  background-size: cover;
-  color-scheme: dark;
 }
 
 body {
