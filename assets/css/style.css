@@ -1,0 +1,358 @@
+/*
+MIT License
+
+Copyright (c) 2023 Samuel Krebs
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+@import url("manrope.css");
+
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+
+html {
+  background: url("../data/bg-5.png");
+  background-attachment: fixed;
+  background-size: cover;
+  color-scheme: dark;
+}
+
+body {
+  color: #f0f0f0;
+  height: 100%;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  opacity: 81%;
+
+  /* img size is 50x50 */
+  background: url("../data/bg3.png") repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse 2.3s infinite;
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse 2.3s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse 2.3s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse 2.3s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+/* SITE TITLE */
+
+.site-title {
+  margin-top: 30px;
+  font-size: 20px;
+  white-space: pre-line;
+  text-align: center;
+}
+
+.site-title img {
+  max-width: 95%;
+  width: 600px;
+  height: auto;
+  transition: scale 0.2s;
+  cursor: pointer;
+}
+
+.site-title img:hover {
+  scale: 1.02;
+}
+
+/* */
+
+/* GAMES GRID */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20px, 600px));
+  grid-gap: 30px;
+  justify-items: center;
+  margin: 20px;
+  margin-top: 90px;
+  padding: 0;
+  text-align: center;
+  place-items: center;
+  justify-content: center;
+}
+
+.grid-object {
+  font-family: "Manrope", sans-serif;
+}
+
+.grid-object-1 {
+  color: #f0f0f0;
+  border: 2px solid #84856e;
+  border-radius: 10px;
+  max-width: 100%;
+  min-height: 320px;
+  width: 600px;
+  background: rgba(100, 80, 40, 0.35);
+}
+
+.grid-object-content {
+  margin: 20px;
+}
+
+.grid-button {
+  white-space: pre-line;
+  text-align: center;
+  left: 0;
+  margin-top: 30px;
+  width: 100%;
+  font-family: "Manrope", sans-serif;
+}
+
+.grid-button button {
+  background: rgba(100, 80, 40, 0.35);
+  padding: 9px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 8px;
+  color: #f0f0f0;
+  border: 2px solid #84856e;
+  border-radius: 10px;
+  font-size: 25px;
+  font-family: "Manrope", sans-serif;
+  cursor: pointer;
+  transition: scale 0.3s;
+}
+
+.grid-button button:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 8px;
+  scale: 103%;
+}
+
+.grid-button button:active {
+  transition: scale 0s;
+  scale: 100%;
+}
+
+/*  */
+
+/* RATING */
+
+.text-input {
+  background-color: black;
+  padding: 11px;
+  font-size: 2vh;
+  border-radius: 13px;
+  border: 2px solid #84856e;
+  max-width: 70%;
+  width: 500px;
+}
+
+.text-input::placeholder {
+  opacity: 0.4;
+  background-image: url("../data/babychat.avif");
+  background-repeat: no-repeat;
+  background-size: 3vh;
+  background-position: 190px;
+}
+
+.rating {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+  place-items: center;
+  justify-content: center;
+}
+
+.rating-item {
+  cursor: pointer;
+  font-size: 4.5vh;
+  color: #f0f0f0;
+  margin-inline: 2px;
+}
+
+.rating-text {
+  margin-inline: 8px;
+  cursor: default;
+}
+
+.ph-fill {
+  color: #caa74e;
+}
+
+/* TEXT */
+
+.text {
+  font-family: "Manrope", sans-serif;
+}
+
+.text-a {
+  font-size: 5vh;
+  margin-bottom: 0;
+}
+
+.text-b {
+  font-size: 2.3vh;
+  color: #8a8884;
+  white-space: pre-line;
+}
+
+.text-c {
+  font-size: 1.6vh;
+  color: #8a8884;
+}
+
+/*  */
+
+.text-bold {
+  font-weight: 800;
+}
+
+.text-semibold {
+  font-weight: 600;
+}
+
+.text-regular {
+  font-weight: 400;
+}
+
+.text-light {
+  font-weight: 200;
+}
+
+/*  */
+
+/* FOOTER */
+
+footer button {
+  background: rgba(100, 80, 40, 0.35);
+  padding: 9px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 8px;
+  border: 1px solid #84856e;
+  border-radius: 8px;
+  font-size: 25px;
+  font-family: "Manrope", sans-serif;
+  cursor: pointer;
+  transition: scale 0.2s;
+}
+
+footer button i {
+  font-size: 33px;
+  position: absolute;
+  color: #f0f0f0;
+}
+
+footer button:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+  scale: 101%;
+}
+
+footer {
+  white-space: pre-line;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  margin-top: 90px;
+  font-size: 23px;
+  width: 100%;
+  font-family: "Manrope", sans-serif;
+}
+
+footer a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.button-a {
+  padding-left: 40px;
+}
+
+.privacy-policy {
+  margin-top: 40px;
+  font-size: 16px;
+  font-family: "Manrope", sans-serif;
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.privacy-policy img {
+  height: 16px;
+  width: auto;
+  margin-left: 5px;
+}
+
+/* */
+
+::-moz-selection {
+  /* Code for Firefox */
+  background: #5b4b24;
+}
+
+::selection {
+  background: #5b4b24;
+}

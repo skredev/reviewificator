@@ -1,3 +1,4 @@
+/*
 MIT License
 
 Copyright (c) 2023 Samuel Krebs
@@ -19,3 +20,73 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+*/
+
+@import url("../../../assets/css/manrope.css");
+
+html {
+  background: url("../../../assets/data/bg-6.png");
+  background-attachment: fixed;
+  background-size: cover;
+  color-scheme: dark;
+}
+
+body {
+  color: #f0f0f0;
+  height: 100%;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 81%;
+}
+
+/* SITE TITLE */
+
+.site-title {
+  margin-top: 30px;
+  font-size: 20px;
+  white-space: pre-line;
+  text-align: center;
+}
+
+.site-title img {
+  max-width: 95%;
+  width: 600px;
+  height: auto;
+  transition: scale 0.2s;
+  cursor: pointer;
+}
+
+.site-title img:hover {
+  scale: 1.02;
+}
+
+.box{
+    position: relative;
+    border: 2px solid #84856e;
+    background: rgba(100, 80, 40, 0.35);
+    border-radius: 35px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 60%;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    padding: 40px;
+  }
+
+  a{
+    color: #caa74e;
+  }
+
+/* */
+
+::-moz-selection {
+  /* Code for Firefox */
+  background: #5b4b24;
+}
+
+::selection {
+  background: #5b4b24;
+}

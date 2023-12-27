@@ -1,0 +1,107 @@
+<!--
+MIT License
+
+Copyright (c) 2022 Sprechblase
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+
+<html>
+    <head>
+        <title>Reviewificator</title>
+        <link rel="icon" type="image/x-icon" href="./dist/img/favicon.PNG">
+        <link rel="stylesheet" href="./css/style.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script defer type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="chat-notification" id="chat-notification">
+            <div class="chat-notification-message">
+              <p class="chat-message-heading">Success</p>
+              <p class="chat-message-desc">Copied review successfully.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./dist/img/favicon.PNG" class="fav">
+            <h1>REVIEWIFICATOR</h1>
+        </div>
+		<div class="box4">
+      <h3>Review Text: </h3>
+      <input type="text" id="text" name="text" value="" required>
+		</div>
+        <div class="box2">
+            <div class="row">
+                <h3>Gameplay*</h3>
+                <ul class="rating-1">
+                    <li class="rating-item-1" data-rate="1"></li>
+                    <li class="rating-item-1 active-1" data-rate="2"></li>
+                    <li class="rating-item-1" data-rate="3"></li>
+                    <li class="rating-item-1" data-rate="4"></li>
+                    <li class="rating-item-1" data-rate="5"></li>
+                </ul>
+            </div>
+            <div class="row">
+                <h3>Graphics*</h3>
+                <ul class="rating-2">
+                    <li class="rating-item-2" data-rate="1"></li>
+                    <li class="rating-item-2 active-2" data-rate="2"></li>
+                    <li class="rating-item-2" data-rate="3"></li>
+                    <li class="rating-item-2" data-rate="4"></li>
+                    <li class="rating-item-2" data-rate="5"></li>
+                </ul>
+            </div>
+            <div class="row">
+                <h3>Audio*</h3>
+                <ul class="rating-3">
+                    <li class="rating-item-3" data-rate="1"></li>
+                    <li class="rating-item-3 active-3" data-rate="2"></li>
+                    <li class="rating-item-3" data-rate="3"></li>
+                    <li class="rating-item-3" data-rate="4"></li>
+                    <li class="rating-item-3" data-rate="5"></li>
+                </ul>
+            </div>
+            <div class="row">
+                <h3>Performance*</h3>
+                <ul class="rating-4">
+                    <li class="rating-item-4" data-rate="1"></li>
+                    <li class="rating-item-4 active-4" data-rate="2"></li>
+                    <li class="rating-item-4" data-rate="3"></li>
+                    <li class="rating-item-4" data-rate="4"></li>
+                    <li class="rating-item-4" data-rate="5"></li>
+                </ul>
+            </div>
+            <div class="row">
+                <h3>Price*</h3>
+                <ul class="rating-5">
+                    <li class="rating-item-5" data-rate="1"></li>
+                    <li class="rating-item-5 active-5" data-rate="2"></li>
+                    <li class="rating-item-5" data-rate="3"></li>
+                    <li class="rating-item-5" data-rate="4"></li>
+                    <li class="rating-item-5" data-rate="5"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box3">
+            <button class="button">GENERATE STEAM RATING</button>
+        </div>
+    </body>
+    <footer>
+        <strong>Made with ❤️ by <a href="https://github.com/sprechblase">Sprechblase</a></strong> PRODUCTION - Build: 311020232001
+    </footer>
+</html>
