@@ -202,7 +202,7 @@ body {
 .text-input {
   background-color: black;
   padding: 11px;
-  font-size: 2vh;
+  font-size: 18.8px;
   border-radius: 13px;
   border: 2px solid #84856e;
   max-width: 70%;
@@ -213,7 +213,7 @@ body {
   opacity: 0.4;
   background-image: url("../data/babychat.avif");
   background-repeat: no-repeat;
-  background-size: 3vh;
+  background-size: 28px;
   background-position: 190px;
 }
 
@@ -229,7 +229,7 @@ body {
 
 .rating-item {
   cursor: pointer;
-  font-size: 4.5vh;
+  font-size: 42px;
   color: #f0f0f0;
   margin-inline: 2px;
 }
@@ -250,18 +250,18 @@ body {
 }
 
 .text-a {
-  font-size: 5vh;
+  font-size: 47px;
   margin-bottom: 0;
 }
 
 .text-b {
-  font-size: 2.3vh;
+  font-size: 21.5px;
   color: #8a8884;
   white-space: pre-line;
 }
 
 .text-c {
-  font-size: 1.6vh;
+  font-size: 15px;
   color: #8a8884;
 }
 
