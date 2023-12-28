@@ -231,11 +231,22 @@ body {
   justify-content: center;
 }
 
-.rating-item {
-  cursor: pointer;
-  font-size: 42px;
-  color: #f0f0f0;
-  margin-inline: 2px;
+@media screen and (min-width: 476px) {
+  .rating-item {
+    cursor: pointer;
+    font-size: 42px;
+    color: #f0f0f0;
+    margin-inline: 2px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .rating-item {
+    cursor: pointer;
+    font-size: 7.8vw;
+    color: #f0f0f0;
+    margin-inline: 2px;
+  }
 }
 
 .rating-text {
