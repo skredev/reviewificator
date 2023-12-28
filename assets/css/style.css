@@ -266,6 +266,7 @@ body {
 
 .text-a {
   font-size: 47px;
+  word-break: break-all;
   margin-bottom: 0;
 }
 
