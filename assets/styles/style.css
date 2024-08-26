@@ -23,7 +23,7 @@ SOFTWARE.
 */
 
 html {
-  background: url("../data/bg-5-min.jpg");
+  background: url("../images/bg-5-min.jpg");
   background-attachment: fixed;
   background-size: cover;
   color-scheme: dark;
@@ -31,7 +31,7 @@ html {
 
 @font-face {
   font-family: "Manrope";
-  src: url('../data/Manrope-VariableFont_wght.ttf') format("truetype-variations");
+  src: url('../fonts/Manrope-VariableFont_wght.ttf') format("truetype-variations");
   font-weight: 100 1000;
 }
 
@@ -94,7 +94,7 @@ body {
   opacity: 81%;
 
   /* img size is 50x50 */
-  background: url("../data/bg3.png") repeat 0 0;
+  background: url("../images/bg3.png") repeat 0 0;
   -webkit-animation: bg-scrolling-reverse 2.3s infinite;
   /* Safari 4+ */
   -moz-animation: bg-scrolling-reverse 2.3s infinite;
@@ -215,7 +215,7 @@ body {
 
 .text-input::placeholder {
   opacity: 0.4;
-  background-image: url("../data/babychat.avif");
+  background-image: url("../images/babychat.avif");
   background-repeat: no-repeat;
   background-size: 28px;
   background-position: 190px;

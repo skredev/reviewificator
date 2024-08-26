@@ -1,6 +1,6 @@
 <h1 align="center">Reviewificator</h1>
 
-<p align="center"><img src="./assets/data/preview.png"></p>
+<p align="center"><img src="./assets/images/preview.png"></p>
 
 A simple checklist template for video game reviews.  
 > Licensed under MIT
