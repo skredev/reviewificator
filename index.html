@@ -1,161 +1,368 @@
-<!--
-MIT License
-
-Copyright (c) 2024 Samuel Krebs
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
--->
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Reviewificator 2.0 by SKre</title>
-        <link rel="icon" type="image/x-icon" href="assets/images/favicon2.png">
-        <link rel="stylesheet" href="assets/styles/style.css">
-        <script src="https://unpkg.com/@phosphor-icons/web"></script>
-        <script language="javascript" type="text/javascript" src="assets/scripts/script.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="content-Type" content="text/html; utf-8">
-        <meta name="robots" content="INDEX,FOLLOW">
-        <meta http-equiv="content-Language" content="en">
-        <meta name="title" content="Reviewificator 2.0">
-        <meta name="description" content="A simple checklist template for video game reviews">
-        <meta name="keywords" content="reviewificator,review,game review,review template">
-        <meta name="author" content="Samuel Krebs">
-        <meta name="publisher" content="Samuel Krebs">
-        <meta name="copyright" content="skre.dev">
-        <meta name="page-topic" content="Game">
-        <meta http-equiv="Reply-to" content="hi@skre.dev">
-        <meta name="expires" content="">
-        <meta name="revisit-after" content="7 days">
+  <head>
+    <meta charset="utf-8" />
+    <title>Reviewificator 2.0 by SKre</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon2.png" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="assets/scripts/script.js"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-Type" content="text/html; utf-8" />
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta http-equiv="content-Language" content="en" />
+    <meta name="title" content="Reviewificator 2.0" />
+    <meta
+      name="description"
+      content="A simple checklist template for video game reviews"
+    />
+    <meta
+      name="keywords"
+      content="reviewificator,review,game review,review template"
+    />
+    <meta name="author" content="Samuel Krebs" />
+    <meta name="publisher" content="Samuel Krebs" />
+    <meta name="copyright" content="skre.dev" />
+    <meta name="page-topic" content="Game" />
+    <meta http-equiv="Reply-to" content="hi@skre.dev" />
+    <meta name="expires" content="" />
+    <meta name="revisit-after" content="7 days" />
 
-        <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://reviewificator.skre.dev">
-        <meta property="og:title" content="Reviewificator 2.0 by SKre">
-        <meta property="og:description" content="a simple checklist template for video game reviews">
-        <meta property="og:image" content="https://reviewificator.skre.dev/assets/images/meta-tags.png">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://reviewificator.skre.dev" />
+    <meta property="og:title" content="Reviewificator 2.0 by SKre" />
+    <meta
+      property="og:description"
+      content="a simple checklist template for video game reviews"
+    />
+    <meta
+      property="og:image"
+      content="https://reviewificator.skre.dev/assets/images/meta-tags.png"
+    />
 
-        <!-- Twitter -->
-        <meta property="twitter:card" content="summary_large_image">
-        <meta property="twitter:url" content="https://reviewificator.skre.dev">
-        <meta property="twitter:title" content="Reviewificator 2.0 by SKre">
-        <meta property="twitter:description" content="a simple checklist template for video game reviews">
-        <meta property="twitter:image" content="https://reviewificator.skre.dev/assets/images/meta-tags.png">
-    </head>
-    <body>
-        <div class="site-title">
-            <img src="assets/images/logo1_white-scaled.png" alt="">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://reviewificator.skre.dev" />
+    <meta property="twitter:title" content="Reviewificator 2.0 by SKre" />
+    <meta
+      property="twitter:description"
+      content="a simple checklist template for video game reviews"
+    />
+    <meta
+      property="twitter:image"
+      content="https://reviewificator.skre.dev/assets/images/meta-tags.png"
+    />
+  </head>
+  <body>
+    <div class="site-title">
+      <img src="assets/images/logo1_white-scaled.png" alt="" />
+    </div>
+    <div class="grid">
+      <div class="grid-object grid-object-1">
+        <div class="grid-object-content">
+          <p class="text text-a text-bold">Your Text</p>
+          <p class="text text-b text-regular text-prevent-select">
+            (optional) hate on it or like it, share your own opinion
+          </p>
+          <input
+            type="text"
+            class="text-input"
+            id="text"
+            name="text"
+            placeholder="lol this game is trash..."
+            autocomplete="off"
+            maxlength="7000"
+          />
         </div>
-        <div class="grid">
-            <div class="grid-object grid-object-1">
-                <div class="grid-object-content">
-                    <p class="text text-a text-bold">Your Text</p>
-                    <p class="text text-b text-regular text-prevent-select">(optional) hate on it or like it,
-                        share your own opinion</p>
-                    <input type="text" class="text-input" id="text" name="text" placeholder="lol this game is trash..." autocomplete="off" maxlength="7000">
-                </div>
-            </div>
-            <div class="grid-object grid-object-1">
-                <div class="grid-object-content">
-                    <p class="text text-a text-bold">Gameplay</p>
-                    <p class="text text-b text-regular text-prevent-select">more twists than a rollercoaster designed by a hyperactive</p>
-                    <ul class="rating" id="rating-gameplay" data-rate="gameplay">
-                        <li class="rating-text text text-c text-light text-prevent-select">awful</li>
-                        <li class="rating-item"><i class="ph-light ph-star" id="rating-item-gameplay" data-rate="1"></i></li>
-                        <li class="rating-item"><i class="ph-light ph-star" id="rating-item-gameplay" data-rate="2"></i></li>
-                        <li class="rating-item"><i class="ph-light ph-star" id="rating-item-gameplay" data-rate="3"></i></li>
-                        <li class="rating-item"><i class="ph-light ph-star" id="rating-item-gameplay" data-rate="4"></i></li>
-                        <li class="rating-item"><i class="ph-light ph-star" id="rating-item-gameplay" data-rate="5"></i></li>
-                        <li class="rating-text text text-c text-light text-prevent-select">great</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="grid-object grid-object-1">
-                <div class="grid-object-content">
-                    <p class="text text-a text-bold">Graphics</p>
-                    <p class="text text-b text-regular text-prevent-select">so vibrant, even grandma's best vase wants a color upgrade</p>
-                    <ul class="rating" id="rating-graphics" data-rate="graphics">
-                        <li class="rating-text text text-c text-light text-prevent-select">awful</li>
-                        <li class="rating-item"><i class="ph-light ph-star" id="rating-item-graphics" data-rate="1"></i></li>
-                        <li class="rating-item"><i class="ph-light ph-star" id="rating-item-graphics" data-rate="2"></i></li>
-                        <li class="rating-item"><i class="ph-light ph-star" id="rating-item-graphics" data-rate="3"></i></li>
-                        <li class="rating-item"><i class="ph-light ph-star" id="rating-item-graphics" data-rate="4"></i></li>
-                        <li class="rating-item"><i class="ph-light ph-star" id="rating-item-graphics" data-rate="5"></i></li>
-                        <li class="rating-text text text-c text-light text-prevent-select">great</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="grid-object grid-object-1">
-                <div class="grid-object-content">
-                    <p class="text text-a text-bold">Audio</p>
-                    <p class="text text-b text-regular text-prevent-select">immersive soundscape that's better than a melody played by unicorns</p>
-                    <ul class="rating" id="rating-audio" data-rate="audio">
-                        <li class="rating-text text text-c text-light text-prevent-select">awful</li>
-                        <li class="rating-item"><i class="ph-light ph-star" id="rating-item-audio" data-rate="1"></i></li>
-                        <li class="rating-item"><i class="ph-light ph-star" id="rating-item-audio" data-rate="2"></i></li>
-                        <li class="rating-item"><i class="ph-light ph-star" id="rating-item-audio" data-rate="3"></i></li>
-                        <li class="rating-item"><i class="ph-light ph-star" id="rating-item-audio" data-rate="4"></i></li>
-                        <li class="rating-item"><i class="ph-light ph-star" id="rating-item-audio" data-rate="5"></i></li>
-                        <li class="rating-text text text-c text-light text-prevent-select">great</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="grid-object grid-object-1">
-                <div class="grid-object-content">
-                    <p class="text text-a text-bold">Performance</p>
-                    <p class="text text-b text-regular text-prevent-select">a flawless dance of pixels and response time where every move is a choreographed masterpiece</p>
-                    <ul class="rating" id="rating-performance" data-rate="performance">
-                        <li class="rating-text text text-c text-light text-prevent-select">awful</li>
-                        <li class="rating-item"><i class="ph-light ph-star" id="rating-item-performance" data-rate="1"></i></li>
-                        <li class="rating-item"><i class="ph-light ph-star" id="rating-item-performance" data-rate="2"></i></li>
-                        <li class="rating-item"><i class="ph-light ph-star" id="rating-item-performance" data-rate="3"></i></li>
-                        <li class="rating-item"><i class="ph-light ph-star" id="rating-item-performance" data-rate="4"></i></li>
-                        <li class="rating-item"><i class="ph-light ph-star" id="rating-item-performance" data-rate="5"></i></li>
-                        <li class="rating-text text text-c text-light text-prevent-select">great</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="grid-object grid-object-1">
-                <div class="grid-object-content">
-                    <p class="text text-a text-bold">Price</p>
-                    <p class="text text-b text-regular text-prevent-select">budget-friendly brilliance that won't make your wallet cry</p>
-                    <ul class="rating" id="rating-price" data-rate="price">
-                        <li class="rating-text text text-c text-light text-prevent-select">awful</li>
-                        <li class="rating-item"><i class="ph-light ph-star" id="rating-item-price" data-rate="1"></i></li>
-                        <li class="rating-item"><i class="ph-light ph-star" id="rating-item-price" data-rate="2"></i></li>
-                        <li class="rating-item"><i class="ph-light ph-star" id="rating-item-price" data-rate="3"></i></li>
-                        <li class="rating-item"><i class="ph-light ph-star" id="rating-item-price" data-rate="4"></i></li>
-                        <li class="rating-item"><i class="ph-light ph-star" id="rating-item-price" data-rate="5"></i></li>
-                        <li class="rating-text text text-c text-light text-prevent-select">great</li>
-                    </ul>
-                </div>
-            </div>
+      </div>
+      <div class="grid-object grid-object-1">
+        <div class="grid-object-content">
+          <p class="text text-a text-bold">Gameplay</p>
+          <p class="text text-b text-regular text-prevent-select">
+            more twists than a rollercoaster designed by a hyperactive
+          </p>
+          <ul class="rating" id="rating-gameplay" data-rate="gameplay">
+            <li class="rating-text text text-c text-light text-prevent-select">
+              awful
+            </li>
+            <li class="rating-item">
+              <i
+                class="ph-light ph-star"
+                id="rating-item-gameplay"
+                data-rate="1"
+              ></i>
+            </li>
+            <li class="rating-item">
+              <i
+                class="ph-light ph-star"
+                id="rating-item-gameplay"
+                data-rate="2"
+              ></i>
+            </li>
+            <li class="rating-item">
+              <i
+                class="ph-light ph-star"
+                id="rating-item-gameplay"
+                data-rate="3"
+              ></i>
+            </li>
+            <li class="rating-item">
+              <i
+                class="ph-light ph-star"
+                id="rating-item-gameplay"
+                data-rate="4"
+              ></i>
+            </li>
+            <li class="rating-item">
+              <i
+                class="ph-light ph-star"
+                id="rating-item-gameplay"
+                data-rate="5"
+              ></i>
+            </li>
+            <li class="rating-text text text-c text-light text-prevent-select">
+              great
+            </li>
+          </ul>
         </div>
-        <div class="grid-button text-prevent-select">
-            <button type="button" id="copyRatingButton" class="text-prevent-select"><i class="ph-fill ph-copy text-prevent-select"></i> Copy your rating</button>
+      </div>
+      <div class="grid-object grid-object-1">
+        <div class="grid-object-content">
+          <p class="text text-a text-bold">Graphics</p>
+          <p class="text text-b text-regular text-prevent-select">
+            so vibrant, even grandma's best vase wants a color upgrade
+          </p>
+          <ul class="rating" id="rating-graphics" data-rate="graphics">
+            <li class="rating-text text text-c text-light text-prevent-select">
+              awful
+            </li>
+            <li class="rating-item">
+              <i
+                class="ph-light ph-star"
+                id="rating-item-graphics"
+                data-rate="1"
+              ></i>
+            </li>
+            <li class="rating-item">
+              <i
+                class="ph-light ph-star"
+                id="rating-item-graphics"
+                data-rate="2"
+              ></i>
+            </li>
+            <li class="rating-item">
+              <i
+                class="ph-light ph-star"
+                id="rating-item-graphics"
+                data-rate="3"
+              ></i>
+            </li>
+            <li class="rating-item">
+              <i
+                class="ph-light ph-star"
+                id="rating-item-graphics"
+                data-rate="4"
+              ></i>
+            </li>
+            <li class="rating-item">
+              <i
+                class="ph-light ph-star"
+                id="rating-item-graphics"
+                data-rate="5"
+              ></i>
+            </li>
+            <li class="rating-text text text-c text-light text-prevent-select">
+              great
+            </li>
+          </ul>
         </div>
-    </body>
-    <footer>
-        a simple open-source checklist template for video game reviews
-        <button type="button" name="mail" class="text-prevent-select" onclick="window.location.href='mailto:hi@skre.dev'"><i class="ph-light ph-paper-plane-right"></i><a class="button-a"> Mail</a></button><button type="button" name="github" class="text-prevent-select" onclick="window.location.href='https://github.com/sprechblase/reviewificator'"><i class="ph-light ph-github-logo"></i><a class="button-a"> GitHub</a></button>
-        <div class="privacy-policy text text-semibold text-prevent-select">Version 2.0<img src="assets/images/gigachad.png" alt=""></a></div>
-    </footer>
+      </div>
+      <div class="grid-object grid-object-1">
+        <div class="grid-object-content">
+          <p class="text text-a text-bold">Audio</p>
+          <p class="text text-b text-regular text-prevent-select">
+            immersive soundscape that's better than a melody played by unicorns
+          </p>
+          <ul class="rating" id="rating-audio" data-rate="audio">
+            <li class="rating-text text text-c text-light text-prevent-select">
+              awful
+            </li>
+            <li class="rating-item">
+              <i
+                class="ph-light ph-star"
+                id="rating-item-audio"
+                data-rate="1"
+              ></i>
+            </li>
+            <li class="rating-item">
+              <i
+                class="ph-light ph-star"
+                id="rating-item-audio"
+                data-rate="2"
+              ></i>
+            </li>
+            <li class="rating-item">
+              <i
+                class="ph-light ph-star"
+                id="rating-item-audio"
+                data-rate="3"
+              ></i>
+            </li>
+            <li class="rating-item">
+              <i
+                class="ph-light ph-star"
+                id="rating-item-audio"
+                data-rate="4"
+              ></i>
+            </li>
+            <li class="rating-item">
+              <i
+                class="ph-light ph-star"
+                id="rating-item-audio"
+                data-rate="5"
+              ></i>
+            </li>
+            <li class="rating-text text text-c text-light text-prevent-select">
+              great
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid-object grid-object-1">
+        <div class="grid-object-content">
+          <p class="text text-a text-bold">Performance</p>
+          <p class="text text-b text-regular text-prevent-select">
+            a flawless dance of pixels and response time where every move is a
+            choreographed masterpiece
+          </p>
+          <ul class="rating" id="rating-performance" data-rate="performance">
+            <li class="rating-text text text-c text-light text-prevent-select">
+              awful
+            </li>
+            <li class="rating-item">
+              <i
+                class="ph-light ph-star"
+                id="rating-item-performance"
+                data-rate="1"
+              ></i>
+            </li>
+            <li class="rating-item">
+              <i
+                class="ph-light ph-star"
+                id="rating-item-performance"
+                data-rate="2"
+              ></i>
+            </li>
+            <li class="rating-item">
+              <i
+                class="ph-light ph-star"
+                id="rating-item-performance"
+                data-rate="3"
+              ></i>
+            </li>
+            <li class="rating-item">
+              <i
+                class="ph-light ph-star"
+                id="rating-item-performance"
+                data-rate="4"
+              ></i>
+            </li>
+            <li class="rating-item">
+              <i
+                class="ph-light ph-star"
+                id="rating-item-performance"
+                data-rate="5"
+              ></i>
+            </li>
+            <li class="rating-text text text-c text-light text-prevent-select">
+              great
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid-object grid-object-1">
+        <div class="grid-object-content">
+          <p class="text text-a text-bold">Price</p>
+          <p class="text text-b text-regular text-prevent-select">
+            budget-friendly brilliance that won't make your wallet cry
+          </p>
+          <ul class="rating" id="rating-price" data-rate="price">
+            <li class="rating-text text text-c text-light text-prevent-select">
+              awful
+            </li>
+            <li class="rating-item">
+              <i
+                class="ph-light ph-star"
+                id="rating-item-price"
+                data-rate="1"
+              ></i>
+            </li>
+            <li class="rating-item">
+              <i
+                class="ph-light ph-star"
+                id="rating-item-price"
+                data-rate="2"
+              ></i>
+            </li>
+            <li class="rating-item">
+              <i
+                class="ph-light ph-star"
+                id="rating-item-price"
+                data-rate="3"
+              ></i>
+            </li>
+            <li class="rating-item">
+              <i
+                class="ph-light ph-star"
+                id="rating-item-price"
+                data-rate="4"
+              ></i>
+            </li>
+            <li class="rating-item">
+              <i
+                class="ph-light ph-star"
+                id="rating-item-price"
+                data-rate="5"
+              ></i>
+            </li>
+            <li class="rating-text text text-c text-light text-prevent-select">
+              great
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="grid-button text-prevent-select">
+      <button type="button" id="copyRatingButton" class="text-prevent-select">
+        <i class="ph-fill ph-copy text-prevent-select"></i> Copy your rating
+      </button>
+    </div>
+  </body>
+  <footer>
+    a simple open-source checklist template for video game reviews
+    <button
+      type="button"
+      name="mail"
+      class="text-prevent-select"
+      onclick="window.location.href='mailto:hi@skre.dev'"
+    >
+      <i class="ph-light ph-paper-plane-right"></i
+      ><a class="button-a"> Mail</a></button
+    ><button
+      type="button"
+      name="github"
+      class="text-prevent-select"
+      onclick="window.location.href='https://github.com/sprechblase/reviewificator'"
+    >
+      <i class="ph-light ph-github-logo"></i><a class="button-a"> GitHub</a>
+    </button>
+    <div class="privacy-policy text text-semibold text-prevent-select">
+      Version 2.0<img src="assets/images/gigachad.png" alt="" />
+    </div>
+  </footer>
 </html>
