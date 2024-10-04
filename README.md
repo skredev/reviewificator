@@ -1,22 +1,30 @@
-<h1 align="center">Reviewificator</h1>
+<h1 align="center">
+Reviewificator
+</h1>
 
-<p align="center"><img src="./assets/images/preview.png"></p>
+<p align="center">
+<div align="center">
 
-A simple checklist template for video game reviews.  
-> Licensed under MIT
+![Stars](https://img.shields.io/github/stars/skredev/reviewificator?logo=github&style=flat)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/skredev/reviewificator/main?logo=git&logoColor=white&style=flat)
+![License](https://img.shields.io/github/license/skredev/reviewificator?logoColor=white&style=flat)
 
-This is a tool to simplify the creation of short steam game reviews.  
-Hosted with ❤ by Github: https://reviewificator.skre.dev
+</div>
+
+![hero](https://raw.githubusercontent.com/skredev/reviewificator/main/assets/images/preview.png)
+
+</p>
+
 
 ## Usage
 
 1) Write your review (optional) in the text box
 
-2) Give your rating with the stars for each category
+2) Enter your rating using the stars for each category
 
-3) Press the “Copy your rating” button
+3) Press the "Copy your review" button
 
-4) Your review gets copied into your clipboard
+4) Your review will be copied to your clipboard
     ```console
     "Your Review Text" (optional)
 
@@ -30,6 +38,9 @@ Hosted with ❤ by Github: https://reviewificator.skre.dev
 
     Made with Reviewificator 2.0  ►  https://reviewificator.skre.dev
     ```
-    
-___
-<p align="center">Made with ❤️ by SKre</p>
+
+## Reporting Issues
+
+If you encounter any issues, please create an issue on GitHub using the provided template, which can be found on the Issues tab.
+
+We appreciate your feedback and will do our best to address the issues fast!
